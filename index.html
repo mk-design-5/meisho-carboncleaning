@@ -1,0 +1,2406 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MEISHOU CARBON CLEANING｜トラック燃費改善・HHOカーボンクリーニング【関西】</title>
+  <meta name="description" content="関西エリアのトラック・大型車向けHHOカーボンクリーニング専門店。燃費改善・DPF負担軽減・エンジン出力回復を43,000円〜の業界最安水準で提供。">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;600;700;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+  <style>
+    /* ===== CSS Variables ===== */
+    :root {
+      --primary: #17bbef;
+      --primary-dark: #0fa3d4;
+      --primary-light: #e8f8fd;
+      --white: #ffffff;
+      --black: #000000;
+      --text-dark: #333333;
+      --text-medium: #555555;
+      --text-light: #777777;
+      --bg-light: #f8f9fa;
+      --bg-dark: #1a1a2e;
+      --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.08);
+      --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.12);
+      --shadow-lg: 0 16px 48px rgba(0, 0, 0, 0.16);
+      --radius-sm: 8px;
+      --radius-md: 16px;
+      --radius-lg: 24px;
+      --transition: all 0.3s ease;
+    }
+
+    /* ===== Reset & Base ===== */
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Noto Sans JP', sans-serif;
+      color: var(--text-dark);
+      background: var(--white);
+      line-height: 1.7;
+      overflow-x: hidden;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    /* ===== Utility ===== */
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    .section-padding {
+      padding: 80px 0;
+    }
+
+    .section-title {
+      font-size: clamp(1.6rem, 3.5vw, 2.4rem);
+      font-weight: 700;
+      text-align: center;
+      margin-bottom: 16px;
+      line-height: 1.3;
+    }
+
+    .section-subtitle {
+      text-align: center;
+      color: var(--text-medium);
+      font-size: 1rem;
+      margin-bottom: 56px;
+    }
+
+    .accent-line {
+      display: block;
+      width: 56px;
+      height: 4px;
+      background: var(--primary);
+      margin: 16px auto 0;
+      border-radius: 2px;
+    }
+
+    .accent-line.white {
+      background: var(--white);
+    }
+
+    /* ===== Fade-in Animation ===== */
+    .fade-in {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 0.7s ease, transform 0.7s ease;
+    }
+
+    .fade-in.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .fade-in-left {
+      opacity: 0;
+      transform: translateX(-40px);
+      transition: opacity 0.7s ease, transform 0.7s ease;
+    }
+
+    .fade-in-left.visible {
+      opacity: 1;
+      transform: translateX(0);
+    }
+
+    .fade-in-right {
+      opacity: 0;
+      transform: translateX(40px);
+      transition: opacity 0.7s ease, transform 0.7s ease;
+    }
+
+    .fade-in-right.visible {
+      opacity: 1;
+      transform: translateX(0);
+    }
+
+    .delay-1 {
+      transition-delay: 0.1s;
+    }
+
+    .delay-2 {
+      transition-delay: 0.2s;
+    }
+
+    .delay-3 {
+      transition-delay: 0.3s;
+    }
+
+    .delay-4 {
+      transition-delay: 0.4s;
+    }
+
+    .delay-5 {
+      transition-delay: 0.5s;
+    }
+
+    .delay-6 {
+      transition-delay: 0.6s;
+    }
+
+    /* ===== Placeholder ===== */
+    .photo-placeholder {
+      background: #d0d0d0;
+      border-radius: var(--radius-md);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #888;
+      font-size: 1rem;
+      font-weight: 500;
+      letter-spacing: 0.05em;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .photo-placeholder::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg, #c8c8c8 25%, #d8d8d8 50%, #c8c8c8 75%);
+      background-size: 200% 200%;
+      animation: shimmer 2.5s infinite;
+    }
+
+    .photo-placeholder span {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .photo-placeholder span i {
+      font-size: 2rem;
+      opacity: 0.5;
+    }
+
+    @keyframes shimmer {
+      0% {
+        background-position: 200% 0;
+      }
+
+      100% {
+        background-position: -200% 0;
+      }
+    }
+
+    /* ===== Buttons ===== */
+    .btn-primary {
+      display: inline-block;
+      padding: 16px 40px;
+      background: var(--white);
+      color: var(--primary);
+      font-weight: 700;
+      font-size: 1rem;
+      border-radius: 50px;
+      border: 2px solid var(--white);
+      cursor: pointer;
+      transition: var(--transition);
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+    }
+
+    .btn-primary:hover {
+      background: transparent;
+      color: var(--white);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+    }
+
+    .btn-secondary {
+      display: inline-block;
+      padding: 16px 40px;
+      background: var(--primary);
+      color: var(--white);
+      font-weight: 700;
+      font-size: 1rem;
+      border-radius: 50px;
+      border: 2px solid var(--primary);
+      cursor: pointer;
+      transition: var(--transition);
+      box-shadow: 0 4px 16px rgba(23, 187, 239, 0.3);
+    }
+
+    .btn-secondary:hover {
+      background: var(--primary-dark);
+      border-color: var(--primary-dark);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(23, 187, 239, 0.4);
+    }
+
+    /* ===== Header ===== */
+    #header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+      padding: 16px 0;
+      transition: background 0.4s ease, box-shadow 0.4s ease, padding 0.4s ease;
+    }
+
+    #header.scrolled {
+      background: rgba(255, 255, 255, 0.97);
+      box-shadow: var(--shadow-sm);
+      padding: 10px 0;
+    }
+
+    .header-inner {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 16px;
+      position: relative;
+      transition: gap 0.4s ease;
+    }
+
+    #header.scrolled .header-inner {
+      gap: 8px;
+    }
+
+    .logo-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
+      transition: gap 0.4s ease;
+    }
+
+    #header.scrolled .logo-container {
+      gap: 4px;
+    }
+
+    .logo-img {
+      display: block;
+    }
+
+    .logo-image-space {
+      width: 60px;
+      height: 60px;
+      background: rgba(255, 255, 255, 0.15);
+      border: 2px dashed rgba(255, 255, 255, 0.6);
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--white);
+      font-size: 0.85rem;
+      font-weight: 700;
+      transition: all 0.4s ease;
+    }
+
+    #header.scrolled .logo-image-space {
+      border-color: var(--primary);
+      color: var(--primary);
+      background: rgba(23, 187, 239, 0.05);
+      width: 40px;
+      height: 40px;
+      font-size: 0.65rem;
+    }
+
+    .logo {
+      font-size: clamp(1rem, 2.5vw, 1.25rem);
+      font-weight: 900;
+      color: var(--white);
+      letter-spacing: 0.02em;
+      line-height: 1.2;
+      text-align: center;
+      transition: color 0.4s ease, font-size 0.4s ease;
+    }
+
+    .logo span {
+      display: block;
+      font-size: 0.6em;
+      font-weight: 400;
+      letter-spacing: 0.08em;
+      opacity: 0.85;
+      margin-top: 4px;
+    }
+
+    #header.scrolled .logo {
+      color: var(--primary);
+      font-size: clamp(0.9rem, 2vw, 1.1rem);
+    }
+
+    .nav-links {
+      display: flex;
+      list-style: none;
+      gap: 32px;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .nav-links a {
+      font-size: 0.88rem;
+      font-weight: 500;
+      color: rgba(255, 255, 255, 0.9);
+      transition: var(--transition);
+      position: relative;
+    }
+
+    .nav-links a::after {
+      content: '';
+      position: absolute;
+      bottom: -3px;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background: var(--white);
+      transition: width 0.3s ease;
+    }
+
+    .nav-links a:hover::after,
+    .nav-links a.active::after {
+      width: 100%;
+    }
+
+    #header.scrolled .nav-links a {
+      color: var(--text-dark);
+    }
+
+    #header.scrolled .nav-links a::after {
+      background: var(--primary);
+    }
+
+    .nav-links a:hover {
+      color: var(--white);
+    }
+
+    #header.scrolled .nav-links a:hover {
+      color: var(--primary);
+    }
+
+    .nav-cta {
+      padding: 8px 24px !important;
+      background: rgba(255, 255, 255, 0.2);
+      border: 1px solid var(--white);
+      color: var(--white) !important;
+      border-radius: 50px;
+      font-weight: 700 !important;
+      transition: var(--transition) !important;
+    }
+
+    .nav-cta:hover {
+      background: var(--white) !important;
+      color: var(--primary) !important;
+      transform: translateY(-1px);
+    }
+
+    .nav-cta::after {
+      display: none !important;
+    }
+
+    #header.scrolled .nav-cta {
+      background: var(--primary);
+      border-color: var(--primary);
+      color: var(--white) !important;
+    }
+
+    #header.scrolled .nav-cta:hover {
+      background: var(--primary-dark) !important;
+      border-color: var(--primary-dark);
+    }
+
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+      padding: 4px;
+      background: none;
+      border: none;
+      position: absolute;
+      top: 10px;
+      right: 0;
+    }
+
+    .hamburger span {
+      display: block;
+      width: 24px;
+      height: 2px;
+      background: var(--white);
+      border-radius: 2px;
+      transition: var(--transition);
+    }
+
+    #header.scrolled .hamburger span {
+      background: var(--text-dark);
+    }
+
+    .hamburger.open span:nth-child(1) {
+      transform: translateY(7px) rotate(45deg);
+    }
+
+    .hamburger.open span:nth-child(2) {
+      opacity: 0;
+    }
+
+    .hamburger.open span:nth-child(3) {
+      transform: translateY(-7px) rotate(-45deg);
+    }
+
+    /* ===== Hero Section ===== */
+    #hero {
+      min-height: 100vh;
+      background: linear-gradient(135deg, #0d9fd4 0%, #17bbef 50%, #4ecef5 100%);
+      display: flex;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
+      padding-top: 180px;
+    }
+
+    .hero-canvas {
+      position: absolute;
+      inset: 0;
+      z-index: 0;
+    }
+
+    .hero-inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: center;
+      position: relative;
+      z-index: 1;
+      padding: 60px 0;
+    }
+
+    .hero-content {
+      color: var(--white);
+    }
+
+    .hero-badge {
+      display: inline-block;
+      padding: 6px 16px;
+      background: rgba(255, 255, 255, 0.2);
+      border: 1px solid rgba(255, 255, 255, 0.4);
+      border-radius: 50px;
+      font-size: 0.82rem;
+      font-weight: 500;
+      letter-spacing: 0.05em;
+      margin-bottom: 24px;
+      backdrop-filter: blur(4px);
+    }
+
+    .hero-title {
+      font-size: clamp(1.8rem, 4vw, 3rem);
+      font-weight: 900;
+      line-height: 1.25;
+      margin-bottom: 20px;
+      text-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .hero-title .highlight-text {
+      display: block;
+      font-size: 1.15em;
+      position: relative;
+    }
+
+    .hero-sub {
+      font-size: 1.05rem;
+      opacity: 0.9;
+      margin-bottom: 12px;
+      animation: fadeSlideUp 0.8s ease 0.3s both;
+    }
+
+    .hero-h2 {
+      font-size: clamp(1.2rem, 2.5vw, 1.6rem);
+      font-weight: 700;
+      margin-bottom: 36px;
+      animation: fadeSlideUp 0.8s ease 0.5s both;
+      padding: 16px 20px;
+      background: rgba(255, 255, 255, 0.15);
+      border-left: 4px solid var(--white);
+      border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+      backdrop-filter: blur(4px);
+    }
+
+    .hero-buttons {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+      animation: fadeSlideUp 0.8s ease 0.7s both;
+    }
+
+    .hero-image .photo-placeholder {
+      width: 100%;
+      aspect-ratio: 4/3;
+      font-size: 1.1rem;
+    }
+
+    .hero-image {
+      animation: fadeSlideRight 0.9s ease 0.4s both;
+    }
+
+    @keyframes fadeSlideUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeSlideRight {
+      from {
+        opacity: 0;
+        transform: translateX(30px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+
+    .hero-title {
+      animation: fadeSlideUp 0.8s ease 0.1s both;
+    }
+
+    .hero-badge {
+      animation: fadeSlideUp 0.7s ease 0s both;
+    }
+
+    .hero-scroll {
+      position: absolute;
+      bottom: 30px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
+      color: rgba(255, 255, 255, 0.8);
+      font-size: 0.75rem;
+      animation: bounce 2s ease infinite;
+    }
+
+    .hero-scroll i {
+      font-size: 1.2rem;
+    }
+
+    @keyframes bounce {
+
+      0%,
+      100% {
+        transform: translateX(-50%) translateY(0);
+      }
+
+      50% {
+        transform: translateX(-50%) translateY(6px);
+      }
+    }
+
+    /* ===== Problems Section ===== */
+    #problems {
+      background: var(--white);
+    }
+
+    .problems-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 24px;
+    }
+
+    .problem-card {
+      background: var(--white);
+      border: 2px solid #eee;
+      border-radius: var(--radius-md);
+      padding: 32px 24px;
+      text-align: center;
+      transition: var(--transition);
+      cursor: default;
+    }
+
+    .problem-card:hover {
+      border-color: var(--primary);
+      box-shadow: var(--shadow-md);
+      transform: translateY(-4px);
+    }
+
+    .problem-icon {
+      font-size: 2.8rem;
+      margin-bottom: 16px;
+      display: block;
+    }
+
+    .problem-card h3 {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--text-dark);
+      line-height: 1.4;
+    }
+
+    /* ===== Cause Section ===== */
+    #cause {
+      background: linear-gradient(135deg, #0d9fd4 0%, #17bbef 100%);
+      color: var(--white);
+    }
+
+    .cause-inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: center;
+    }
+
+    .cause-content .section-title {
+      text-align: left;
+      color: var(--white);
+    }
+
+    .cause-content .section-subtitle {
+      text-align: left;
+      color: rgba(255, 255, 255, 0.8);
+      margin-bottom: 32px;
+    }
+
+    .cause-desc {
+      font-size: 1.05rem;
+      line-height: 1.8;
+      opacity: 0.92;
+      margin-bottom: 32px;
+      padding: 24px;
+      background: rgba(255, 255, 255, 0.15);
+      border-radius: var(--radius-md);
+      border-left: 4px solid rgba(255, 255, 255, 0.6);
+      backdrop-filter: blur(4px);
+    }
+
+    .cause-points {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .cause-point {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 500;
+    }
+
+    .cause-point i {
+      width: 32px;
+      height: 32px;
+      background: rgba(255, 255, 255, 0.2);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.9rem;
+      flex-shrink: 0;
+    }
+
+    .cause-image .photo-placeholder {
+      width: 100%;
+      aspect-ratio: 1/1;
+    }
+
+    /* ===== Solution Section ===== */
+    #solution {
+      background: var(--white);
+    }
+
+    .solution-top {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: center;
+      margin-bottom: 56px;
+    }
+
+    .solution-desc {
+      font-size: 1.05rem;
+      line-height: 1.8;
+      color: var(--text-medium);
+      margin-bottom: 24px;
+    }
+
+    .solution-image .photo-placeholder {
+      width: 100%;
+      aspect-ratio: 4/3;
+    }
+
+    .solution-cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+
+    .solution-card {
+      background: var(--primary-light);
+      border-radius: var(--radius-md);
+      padding: 32px 24px;
+      text-align: center;
+      transition: var(--transition);
+      border: 2px solid transparent;
+    }
+
+    .solution-card:hover {
+      border-color: var(--primary);
+      box-shadow: var(--shadow-md);
+      transform: translateY(-4px);
+      background: var(--white);
+    }
+
+    .solution-card-icon {
+      width: 64px;
+      height: 64px;
+      background: var(--primary);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 20px;
+      font-size: 1.6rem;
+      color: var(--white);
+      transition: var(--transition);
+    }
+
+    .solution-card:hover .solution-card-icon {
+      transform: scale(1.1);
+      box-shadow: 0 4px 16px rgba(23, 187, 239, 0.4);
+    }
+
+    .solution-card h3 {
+      font-size: 1.05rem;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+
+    .solution-card p {
+      font-size: 0.9rem;
+      color: var(--text-medium);
+      line-height: 1.6;
+    }
+
+    /* ===== Process Section ===== */
+    #process {
+      background: var(--bg-light);
+    }
+
+    .process-steps {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 0;
+      position: relative;
+    }
+
+    .process-steps::before {
+      content: '';
+      position: absolute;
+      top: 70px;
+      left: 12.5%;
+      right: 12.5%;
+      height: 3px;
+      background: linear-gradient(90deg, var(--primary), var(--primary-dark));
+      z-index: 0;
+      border-radius: 2px;
+    }
+
+    .process-step {
+      text-align: center;
+      padding: 0 16px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .step-number {
+      width: 56px;
+      height: 56px;
+      background: var(--primary);
+      color: var(--white);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.2rem;
+      font-weight: 900;
+      margin: 0 auto 16px;
+      position: relative;
+      box-shadow: 0 4px 16px rgba(23, 187, 239, 0.4);
+      transition: var(--transition);
+    }
+
+    .step-number::before {
+      content: '';
+      position: absolute;
+      inset: -4px;
+      border-radius: 50%;
+      border: 2px solid rgba(23, 187, 239, 0.3);
+    }
+
+    .process-step:hover .step-number {
+      transform: scale(1.15);
+      box-shadow: 0 8px 24px rgba(23, 187, 239, 0.5);
+    }
+
+    .step-label {
+      font-size: 0.75rem;
+      font-weight: 700;
+      color: var(--primary);
+      letter-spacing: 0.08em;
+      margin-bottom: 8px;
+    }
+
+    .step-title {
+      font-size: 1rem;
+      font-weight: 700;
+      margin-bottom: 12px;
+      line-height: 1.4;
+    }
+
+    .step-desc {
+      font-size: 0.85rem;
+      color: var(--text-medium);
+      line-height: 1.6;
+      margin-bottom: 16px;
+    }
+
+    .step-photo .photo-placeholder {
+      width: 100%;
+      aspect-ratio: 4/3;
+      font-size: 0.85rem;
+      margin-top: 16px;
+    }
+
+    /* ===== Effects Section ===== */
+    #effects {
+      background: linear-gradient(135deg, #0d9fd4 0%, #17bbef 100%);
+      color: var(--white);
+    }
+
+    .effects-stats {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 24px;
+      margin-bottom: 56px;
+    }
+
+    .stat-item {
+      text-align: center;
+      padding: 32px 16px;
+      background: rgba(255, 255, 255, 0.15);
+      border-radius: var(--radius-md);
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      transition: var(--transition);
+      backdrop-filter: blur(4px);
+    }
+
+    .stat-item:hover {
+      background: rgba(255, 255, 255, 0.25);
+      transform: translateY(-4px);
+    }
+
+    .stat-number {
+      font-size: clamp(2rem, 4vw, 2.8rem);
+      font-weight: 900;
+      color: var(--white);
+      display: block;
+      line-height: 1;
+      margin-bottom: 8px;
+    }
+
+    .stat-unit {
+      font-size: 1.2rem;
+      font-weight: 700;
+    }
+
+    .stat-label {
+      font-size: 0.85rem;
+      opacity: 0.85;
+      line-height: 1.4;
+    }
+
+    .effects-cards {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+    }
+
+    .effect-card {
+      background: var(--white);
+      border-radius: var(--radius-md);
+      padding: 28px 20px;
+      text-align: center;
+      transition: var(--transition);
+    }
+
+    .effect-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-lg);
+    }
+
+    .effect-card-icon {
+      font-size: 2rem;
+      color: var(--primary);
+      margin-bottom: 12px;
+      display: block;
+    }
+
+    .effect-card h3 {
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--text-dark);
+      margin-bottom: 8px;
+    }
+
+    .effect-card p {
+      font-size: 0.82rem;
+      color: var(--text-medium);
+      line-height: 1.5;
+    }
+
+    /* ===== Pricing Section ===== */
+    #pricing {
+      background: var(--white);
+    }
+
+    .pricing-inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: start;
+    }
+
+    .price-card {
+      background: linear-gradient(135deg, #17bbef 0%, #0d9fd4 100%);
+      border-radius: var(--radius-lg);
+      padding: 48px 40px;
+      color: var(--white);
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 16px 48px rgba(23, 187, 239, 0.35);
+      transition: var(--transition);
+    }
+
+    .price-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 24px 64px rgba(23, 187, 239, 0.45);
+    }
+
+    .price-card::before {
+      content: '';
+      position: absolute;
+      top: -40%;
+      right: -20%;
+      width: 300px;
+      height: 300px;
+      background: rgba(255, 255, 255, 0.08);
+      border-radius: 50%;
+    }
+
+    .price-badge {
+      display: inline-block;
+      padding: 6px 20px;
+      background: #ff7f00;
+      border-radius: 50px;
+      font-size: 0.82rem;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      margin-bottom: 20px;
+      animation: pulse-badge 2s ease infinite;
+    }
+
+    @keyframes pulse-badge {
+
+      0%,
+      100% {
+        box-shadow: 0 0 0 0 rgba(255, 127, 0, 0.4);
+      }
+
+      50% {
+        box-shadow: 0 0 0 8px rgba(255, 127, 0, 0);
+      }
+    }
+
+    .price-type {
+      font-size: 0.95rem;
+      opacity: 0.85;
+      margin-bottom: 16px;
+    }
+
+    .price-amount {
+      font-size: clamp(2.5rem, 5vw, 3.5rem);
+      font-weight: 900;
+      line-height: 1;
+      margin-bottom: 8px;
+    }
+
+    .price-amount span {
+      font-size: 1.4rem;
+    }
+
+    .price-tax {
+      font-size: 0.85rem;
+      opacity: 0.8;
+      margin-bottom: 24px;
+    }
+
+    .price-note {
+      font-size: 0.9rem;
+      opacity: 0.85;
+      background: rgba(255, 255, 255, 0.15);
+      border-radius: var(--radius-sm);
+      padding: 12px 20px;
+      backdrop-filter: blur(4px);
+    }
+
+    .pricing-reasons {
+      padding: 0;
+    }
+
+    .pricing-reasons h3 {
+      font-size: 1.3rem;
+      font-weight: 700;
+      margin-bottom: 24px;
+      color: var(--text-dark);
+    }
+
+    .reason-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      margin-bottom: 32px;
+    }
+
+    .reason-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+      padding: 20px;
+      background: var(--bg-light);
+      border-radius: var(--radius-sm);
+      transition: var(--transition);
+    }
+
+    .reason-list li:hover {
+      background: var(--primary-light);
+      transform: translateX(4px);
+    }
+
+    .reason-check {
+      width: 28px;
+      height: 28px;
+      background: var(--primary);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--white);
+      font-size: 0.8rem;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+
+    .reason-text strong {
+      display: block;
+      font-weight: 700;
+      margin-bottom: 4px;
+    }
+
+    .reason-text span {
+      font-size: 0.88rem;
+      color: var(--text-medium);
+    }
+
+    .pricing-photo .photo-placeholder {
+      width: 100%;
+      aspect-ratio: 16/9;
+      margin-top: 24px;
+    }
+
+    /* ===== FAQ Section ===== */
+    #faq {
+      background: var(--bg-light);
+    }
+
+    .faq-list {
+      max-width: 760px;
+      margin: 0 auto;
+    }
+
+    .faq-item {
+      background: var(--white);
+      border-radius: var(--radius-md);
+      margin-bottom: 16px;
+      overflow: hidden;
+      box-shadow: var(--shadow-sm);
+      transition: box-shadow 0.3s ease;
+    }
+
+    .faq-item:hover {
+      box-shadow: var(--shadow-md);
+    }
+
+    .faq-question {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 24px 28px;
+      cursor: pointer;
+      user-select: none;
+      gap: 16px;
+    }
+
+    .faq-q-icon {
+      width: 32px;
+      height: 32px;
+      background: var(--primary);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--white);
+      font-weight: 900;
+      font-size: 0.9rem;
+      flex-shrink: 0;
+    }
+
+    .faq-q-text {
+      font-size: 1rem;
+      font-weight: 600;
+      flex: 1;
+      line-height: 1.5;
+    }
+
+    .faq-toggle {
+      width: 28px;
+      height: 28px;
+      background: var(--bg-light);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      transition: var(--transition);
+      color: var(--primary);
+    }
+
+    .faq-item.open .faq-toggle {
+      transform: rotate(45deg);
+      background: var(--primary);
+      color: var(--white);
+    }
+
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.4s ease, padding 0.3s ease;
+      padding: 0 28px;
+    }
+
+    .faq-item.open .faq-answer {
+      max-height: 300px;
+      padding-bottom: 24px;
+    }
+
+    .faq-a-icon {
+      display: inline-block;
+      width: 24px;
+      height: 24px;
+      background: var(--primary-light);
+      border-radius: 50%;
+      text-align: center;
+      line-height: 24px;
+      font-size: 0.75rem;
+      font-weight: 700;
+      color: var(--primary);
+      margin-right: 8px;
+      flex-shrink: 0;
+    }
+
+    .faq-a-content {
+      display: flex;
+      align-items: flex-start;
+      gap: 0;
+      padding-top: 12px;
+      border-top: 1px solid #f0f0f0;
+    }
+
+    .faq-answer p {
+      font-size: 0.95rem;
+      color: var(--text-medium);
+      line-height: 1.7;
+    }
+
+    /* ===== Contact Section ===== */
+    #contact {
+      background: linear-gradient(135deg, #0d9fd4 0%, #17bbef 100%);
+      color: var(--white);
+    }
+
+    .contact-header {
+      margin-bottom: 56px;
+    }
+
+    .contact-header .section-title {
+      color: var(--white);
+    }
+
+    .contact-header .section-subtitle {
+      color: rgba(255, 255, 255, 0.8);
+    }
+
+    .contact-inner {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      gap: 56px;
+      align-items: start;
+    }
+
+    .contact-info {
+      color: var(--white);
+    }
+
+    .contact-info h3 {
+      font-size: 1.2rem;
+      font-weight: 700;
+      margin-bottom: 24px;
+      opacity: 0.9;
+    }
+
+    .contact-detail {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      padding: 16px 20px;
+      background: rgba(255, 255, 255, 0.15);
+      border-radius: var(--radius-sm);
+      margin-bottom: 16px;
+      backdrop-filter: blur(4px);
+      transition: var(--transition);
+    }
+
+    .contact-detail:hover {
+      background: rgba(255, 255, 255, 0.25);
+    }
+
+    .contact-detail i {
+      font-size: 1.2rem;
+      width: 20px;
+      text-align: center;
+    }
+
+    .contact-detail span {
+      font-size: 0.95rem;
+      line-height: 1.4;
+    }
+
+    .contact-form {
+      background: var(--white);
+      border-radius: var(--radius-lg);
+      padding: 48px 40px;
+      box-shadow: var(--shadow-lg);
+    }
+
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .form-group label {
+      display: block;
+      font-size: 0.88rem;
+      font-weight: 600;
+      color: var(--text-dark);
+      margin-bottom: 8px;
+    }
+
+    .form-group label .required {
+      color: var(--primary);
+      margin-left: 4px;
+    }
+
+    .form-control {
+      width: 100%;
+      padding: 12px 16px;
+      border: 2px solid #e8e8e8;
+      border-radius: var(--radius-sm);
+      font-family: 'Noto Sans JP', sans-serif;
+      font-size: 0.95rem;
+      color: var(--text-dark);
+      background: var(--white);
+      transition: border-color 0.3s ease, box-shadow 0.3s ease;
+      outline: none;
+    }
+
+    .form-control:focus {
+      border-color: var(--primary);
+      box-shadow: 0 0 0 3px rgba(23, 187, 239, 0.15);
+    }
+
+    .form-control::placeholder {
+      color: #bbb;
+    }
+
+    textarea.form-control {
+      resize: vertical;
+      min-height: 120px;
+    }
+
+    .form-submit {
+      text-align: center;
+      margin-top: 8px;
+    }
+
+    .btn-submit {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 18px 48px;
+      background: linear-gradient(135deg, #17bbef, #0d9fd4);
+      color: var(--white);
+      font-family: 'Noto Sans JP', sans-serif;
+      font-size: 1rem;
+      font-weight: 700;
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+      transition: var(--transition);
+      box-shadow: 0 4px 16px rgba(23, 187, 239, 0.4);
+    }
+
+    .btn-submit:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 28px rgba(23, 187, 239, 0.5);
+      background: linear-gradient(135deg, #0d9fd4, #0a8ab5);
+    }
+
+    .form-success {
+      display: none;
+      text-align: center;
+      padding: 32px;
+      color: var(--primary);
+    }
+
+    .form-success i {
+      font-size: 3rem;
+      display: block;
+      margin-bottom: 16px;
+    }
+
+    /* ===== Footer ===== */
+    #footer {
+      background: var(--bg-dark);
+      color: rgba(255, 255, 255, 0.75);
+      padding: 56px 0 28px;
+    }
+
+    .footer-inner {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr;
+      gap: 48px;
+      margin-bottom: 40px;
+    }
+
+    .footer-brand .logo-footer {
+      font-size: 1.1rem;
+      font-weight: 900;
+      color: var(--white);
+      margin-bottom: 16px;
+      display: block;
+    }
+
+    .footer-brand .logo-footer span {
+      display: block;
+      font-size: 0.65em;
+      font-weight: 400;
+      opacity: 0.7;
+      letter-spacing: 0.08em;
+    }
+
+    .footer-brand p {
+      font-size: 0.88rem;
+      line-height: 1.7;
+      margin-bottom: 16px;
+    }
+
+    .footer-area {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.85rem;
+      padding: 8px 16px;
+      background: rgba(255, 255, 255, 0.08);
+      border-radius: 50px;
+      color: var(--primary);
+    }
+
+    .footer-nav h4 {
+      color: var(--white);
+      font-size: 0.9rem;
+      font-weight: 700;
+      margin-bottom: 16px;
+      letter-spacing: 0.05em;
+    }
+
+    .footer-nav ul {
+      list-style: none;
+    }
+
+    .footer-nav ul li {
+      margin-bottom: 10px;
+    }
+
+    .footer-nav ul li a {
+      font-size: 0.88rem;
+      color: rgba(255, 255, 255, 0.6);
+      transition: var(--transition);
+    }
+
+    .footer-nav ul li a:hover {
+      color: var(--primary);
+    }
+
+    .footer-bottom {
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      padding-top: 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+
+    .footer-bottom p {
+      font-size: 0.82rem;
+      opacity: 0.5;
+    }
+
+    /* ===== Mobile Nav ===== */
+    .mobile-nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(23, 187, 239, 0.97);
+      backdrop-filter: blur(8px);
+      z-index: 999;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 32px;
+      transform: translateX(100%);
+      transition: transform 0.4s ease;
+    }
+
+    .mobile-nav.open {
+      transform: translateX(0);
+    }
+
+    .mobile-nav a {
+      color: var(--white);
+      font-size: 1.3rem;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      padding: 8px 24px;
+      transition: var(--transition);
+    }
+
+    .mobile-nav a:hover {
+      opacity: 0.7;
+    }
+
+    .mobile-nav .btn-primary {
+      font-size: 1rem;
+      margin-top: 8px;
+    }
+
+    /* ===== Responsive ===== */
+    @media (max-width: 1024px) {
+      .process-steps {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+      }
+
+      .process-steps::before {
+        display: none;
+      }
+
+      .effects-stats {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .effects-cards {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 768px) {
+      #hero {
+        padding-top: 140px;
+      }
+
+      .section-padding {
+        padding: 60px 0;
+      }
+
+      .hero-inner {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        text-align: center;
+      }
+
+      .hero-buttons {
+        justify-content: center;
+      }
+
+      .cause-inner {
+        grid-template-columns: 1fr;
+      }
+
+      .cause-content .section-title {
+        text-align: center;
+      }
+
+      .cause-content .section-subtitle {
+        text-align: center;
+      }
+
+      .solution-top {
+        grid-template-columns: 1fr;
+      }
+
+      .process-steps {
+        grid-template-columns: 1fr;
+      }
+
+      .effects-stats {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .effects-cards {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .pricing-inner {
+        grid-template-columns: 1fr;
+      }
+
+      .contact-inner {
+        grid-template-columns: 1fr;
+      }
+
+      .contact-form {
+        padding: 32px 24px;
+      }
+
+      .form-row {
+        grid-template-columns: 1fr;
+      }
+
+      .footer-inner {
+        grid-template-columns: 1fr;
+        gap: 32px;
+      }
+
+      .footer-bottom {
+        justify-content: center;
+        text-align: center;
+      }
+
+      .nav-links {
+        display: none;
+      }
+
+      .hamburger {
+        display: flex;
+      }
+
+      .solution-cards {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-h2 {
+        font-size: 1.1rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .effects-stats {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .effects-cards {
+        grid-template-columns: 1fr;
+      }
+
+      .problems-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ===== Mobile Nav ===== -->
+  <div class="mobile-nav" id="mobileNav">
+    <a href="#problems" onclick="closeMobileNav()">お悩み</a>
+    <a href="#solution" onclick="closeMobileNav()">サービス内容</a>
+    <a href="#process" onclick="closeMobileNav()">施工の流れ</a>
+    <a href="#pricing" onclick="closeMobileNav()">料金</a>
+    <a href="#faq" onclick="closeMobileNav()">よくある質問</a>
+    <a href="#contact" class="btn-primary" onclick="closeMobileNav()">お問い合わせ</a>
+  </div>
+
+  <!-- ===== Header ===== -->
+  <header id="header">
+    <div class="container">
+      <div class="header-inner">
+        <div class="logo-container">
+          <a href="#hero" class="logo-img">
+            <div class="logo-image-space">ロゴ写真</div>
+          </a>
+          <a href="#hero" class="logo">
+            MEISHOU CARBON CLEANING
+            <span>HHOカーボンクリーニング｜関西</span>
+          </a>
+        </div>
+        <nav>
+          <ul class="nav-links">
+            <li><a href="#solution">サービス内容</a></li>
+            <li><a href="#process">施工の流れ</a></li>
+            <li><a href="#pricing">料金</a></li>
+            <li><a href="#faq">よくある質問</a></li>
+            <li><a href="#contact" class="nav-cta">お問い合わせ</a></li>
+          </ul>
+        </nav>
+        <button class="hamburger" id="hamburger" aria-label="メニュー">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== Hero Section ===== -->
+  <section id="hero">
+    <canvas class="hero-canvas" id="heroCanvas"></canvas>
+    <div class="container">
+      <div class="hero-inner">
+        <div class="hero-content">
+          <div class="hero-badge">
+            <i class="fas fa-map-marker-alt" style="margin-right:6px;"></i>
+            関西エリア対応（大阪・兵庫・京都ほか）
+          </div>
+          <h1 class="hero-title">
+            トラックの燃費、<br>
+            <span class="highlight-text">落ちていませんか？</span>
+          </h1>
+          <p class="hero-sub">カーボン蓄積が原因かもしれません</p>
+          <div class="hero-h2">HHOカーボンクリーニングで即改善</div>
+          <div class="hero-buttons">
+            <a href="#contact" class="btn-primary">
+              <i class="fas fa-envelope" style="margin-right:8px;"></i>無料相談はこちら
+            </a>
+            <a href="#solution" class="btn-primary"
+              style="background:transparent;color:var(--white);border-color:rgba(255,255,255,0.7);">
+              詳しく見る <i class="fas fa-arrow-down" style="margin-left:8px;"></i>
+            </a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <div class="photo-placeholder" style="height:380px;">
+            <span><i class="fas fa-truck"></i>[写真]<br><small
+                style="font-size:0.75rem;opacity:0.7;">トラックのイメージ</small></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <span>SCROLL</span>
+      <i class="fas fa-chevron-down"></i>
+    </div>
+  </section>
+
+  <!-- ===== Problems Section ===== -->
+  <section id="problems" class="section-padding">
+    <div class="container">
+      <h2 class="section-title fade-in">こんなお悩みありませんか？</h2>
+      <span class="accent-line fade-in delay-1"></span>
+      <p class="section-subtitle fade-in delay-2" style="margin-top:24px;">多くのトラック運行事業者様から寄せられるお声です</p>
+      <div class="problems-grid">
+        <div class="problem-card fade-in delay-1">
+          <span class="problem-icon">😰</span>
+          <h3>燃費が<br>年々悪化している</h3>
+        </div>
+        <div class="problem-card fade-in delay-2">
+          <span class="problem-icon">🔧</span>
+          <h3>DPF詰まりが<br>頻発する</h3>
+        </div>
+        <div class="problem-card fade-in delay-3">
+          <span class="problem-icon">⚡</span>
+          <h3>加速が鈍い・<br>パワー不足</h3>
+        </div>
+        <div class="problem-card fade-in delay-4">
+          <span class="problem-icon">💰</span>
+          <h3>整備コストが<br>増えている</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Cause Section ===== -->
+  <section id="cause" class="section-padding">
+    <div class="container">
+      <div class="cause-inner">
+        <div class="cause-content fade-in-left">
+          <h2 class="section-title">その原因は<br>カーボン蓄積です</h2>
+          <span class="accent-line white" style="margin:16px 0 24px;display:block;"></span>
+          <div class="cause-desc">
+            エンジン内部に溜まるカーボン（煤）は、燃焼効率を低下させ、燃費・出力・排ガスに悪影響を与えます。特に長距離走行が多いトラックは蓄積が早く、定期的なクリーニングが不可欠です。
+          </div>
+          <div class="cause-points">
+            <div class="cause-point">
+              <i class="fas fa-times"></i>
+              <span>燃焼室への燃料噴射が妨げられる</span>
+            </div>
+            <div class="cause-point">
+              <i class="fas fa-times"></i>
+              <span>排気系（DPF・EGR）の目詰まりが進行</span>
+            </div>
+            <div class="cause-point">
+              <i class="fas fa-times"></i>
+              <span>エンジンオイルの劣化が加速する</span>
+            </div>
+          </div>
+        </div>
+        <div class="cause-image fade-in-right">
+          <div class="photo-placeholder" style="height:400px;">
+            <span><i class="fas fa-cog"></i>[写真]<br><small
+                style="font-size:0.75rem;opacity:0.7;">エンジン断面イメージ</small></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Solution Section ===== -->
+  <section id="solution" class="section-padding">
+    <div class="container">
+      <h2 class="section-title fade-in">解決策：HHOカーボンクリーニング</h2>
+      <span class="accent-line fade-in delay-1"></span>
+      <p class="section-subtitle fade-in delay-2" style="margin-top:24px;">水素と酸素の力で、エンジン内部をクリーンに</p>
+      <div class="solution-top">
+        <div class="fade-in-left">
+          <p class="solution-desc">
+            水素と酸素のガス（HHOガス）をエンジンに吸入させ、燃焼時の反応でカーボンを分解・除去します。エンジンを分解することなく、短時間でカーボンを除去できる革新的な技術です。
+          </p>
+          <p class="solution-desc">
+            エンジンへのダメージがなく、走行しながら継続的な効果も期待できます。施工後すぐに燃費改善・パワー回復を実感いただけるケースが多く報告されています。
+          </p>
+          <a href="#contact" class="btn-secondary">
+            <i class="fas fa-phone" style="margin-right:8px;"></i>今すぐ相談する
+          </a>
+        </div>
+        <div class="solution-image fade-in-right">
+          <div class="photo-placeholder" style="height:320px;">
+            <span><i class="fas fa-atom"></i>[写真]<br><small
+                style="font-size:0.75rem;opacity:0.7;">HHO施工イメージ</small></span>
+          </div>
+        </div>
+      </div>
+      <div class="solution-cards">
+        <div class="solution-card fade-in delay-1">
+          <div class="solution-card-icon"><i class="fas fa-leaf"></i></div>
+          <h3>環境に優しい</h3>
+          <p>水（H₂O）を電気分解して作るHHOガスを使用。有害物質を使わない安全な施工です。</p>
+        </div>
+        <div class="solution-card fade-in delay-2">
+          <div class="solution-card-icon"><i class="fas fa-bolt"></i></div>
+          <h3>エンジン無分解</h3>
+          <p>エンジンを分解せず、吸気口から接続するだけ。車両のダウンタイムを最小限に抑えます。</p>
+        </div>
+        <div class="solution-card fade-in delay-3">
+          <div class="solution-card-icon"><i class="fas fa-clock"></i></div>
+          <h3>短時間施工</h3>
+          <p>施工時間は約60分。通常の点検・整備の合間に実施でき、業務への支障を最小化します。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Process Section ===== -->
+  <section id="process" class="section-padding">
+    <div class="container">
+      <h2 class="section-title fade-in">施工の流れ</h2>
+      <span class="accent-line fade-in delay-1"></span>
+      <p class="section-subtitle fade-in delay-2" style="margin-top:24px;">シンプルなステップで、エンジンをリフレッシュ</p>
+      <div class="process-steps">
+        <div class="process-step fade-in delay-1">
+          <div class="step-number">1</div>
+          <div class="step-label">STEP 1</div>
+          <div class="step-title">水からHHOガス生成</div>
+          <div class="step-desc">純水を電気分解して水素・酸素混合ガス（HHOガス）を生成します。</div>
+          <div class="step-photo">
+            <div class="photo-placeholder"><span><i class="fas fa-flask"></i>[写真]</span></div>
+          </div>
+        </div>
+        <div class="process-step fade-in delay-2">
+          <div class="step-number">2</div>
+          <div class="step-label">STEP 2</div>
+          <div class="step-title">吸気からエンジンへ供給</div>
+          <div class="step-desc">吸気口に専用ホースを接続し、HHOガスをエンジンに送り込みます。</div>
+          <div class="step-photo">
+            <div class="photo-placeholder"><span><i class="fas fa-plug"></i>[写真]</span></div>
+          </div>
+        </div>
+        <div class="process-step fade-in delay-3">
+          <div class="step-number">3</div>
+          <div class="step-label">STEP 3</div>
+          <div class="step-title">燃焼時にカーボン分解</div>
+          <div class="step-desc">エンジン燃焼時の高温環境でHHOガスが反応し、カーボンを分解・除去します。</div>
+          <div class="step-photo">
+            <div class="photo-placeholder"><span><i class="fas fa-fire"></i>[写真]</span></div>
+          </div>
+        </div>
+        <div class="process-step fade-in delay-4">
+          <div class="step-number">4</div>
+          <div class="step-label">STEP 4</div>
+          <div class="step-title">クリーンなエンジンへ</div>
+          <div class="step-desc">施工完了。燃費改善・出力回復・排気クリーン化の効果を実感いただけます。</div>
+          <div class="step-photo">
+            <div class="photo-placeholder"><span><i class="fas fa-check-circle"></i>[写真]</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Effects Section ===== -->
+  <section id="effects" class="section-padding">
+    <div class="container">
+      <h2 class="section-title fade-in" style="color:var(--white);">導入効果</h2>
+      <span class="accent-line white fade-in delay-1"></span>
+      <p class="section-subtitle fade-in delay-2" style="color:rgba(255,255,255,0.8);margin-top:24px;">
+        数字で見る、HHOカーボンクリーニングの効果</p>
+      <div class="effects-stats">
+        <div class="stat-item fade-in delay-1">
+          <span class="stat-number" data-target="15" data-suffix="%">0</span>
+          <div class="stat-label">燃費改善率<br>最大UP</div>
+        </div>
+        <div class="stat-item fade-in delay-2">
+          <span class="stat-number" data-target="50" data-suffix="%">0</span>
+          <div class="stat-label">DPF清掃頻度<br>最大削減</div>
+        </div>
+        <div class="stat-item fade-in delay-3">
+          <span class="stat-number" data-target="60" data-suffix="分">0</span>
+          <div class="stat-label">施工時間<br>約</div>
+        </div>
+        <div class="stat-item fade-in delay-4">
+          <div class="stat-number" style="font-size:1.6rem;">関西全域</div>
+          <div class="stat-label">対応エリア<br>大阪・兵庫・京都ほか</div>
+        </div>
+      </div>
+      <div class="effects-cards">
+        <div class="effect-card fade-in delay-1">
+          <span class="effect-card-icon"><i class="fas fa-gas-pump"></i></span>
+          <h3>燃費改善</h3>
+          <p>カーボン除去により燃焼効率が向上。燃料コストの削減につながります。</p>
+        </div>
+        <div class="effect-card fade-in delay-2">
+          <span class="effect-card-icon"><i class="fas fa-tachometer-alt"></i></span>
+          <h3>エンジン出力回復</h3>
+          <p>詰まりが解消されることで、本来のエンジンパワーが復活します。</p>
+        </div>
+        <div class="effect-card fade-in delay-3">
+          <span class="effect-card-icon"><i class="fas fa-filter"></i></span>
+          <h3>DPF負担軽減</h3>
+          <p>DPFへの煤の堆積が減少し、再生頻度・清掃コストが低下します。</p>
+        </div>
+        <div class="effect-card fade-in delay-4">
+          <span class="effect-card-icon"><i class="fas fa-tools"></i></span>
+          <h3>整備コスト削減</h3>
+          <p>定期的な施工により、大がかりな修理・部品交換の頻度を下げられます。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Pricing Section ===== -->
+  <section id="pricing" class="section-padding">
+    <div class="container">
+      <h2 class="section-title fade-in">料金プラン</h2>
+      <span class="accent-line fade-in delay-1"></span>
+      <p class="section-subtitle fade-in delay-2" style="margin-top:24px;">業界最安水準の価格で、確かな効果をご提供</p>
+      <div class="pricing-inner">
+        <div class="fade-in-left">
+          <div class="price-card">
+            <div class="price-badge">🏆 業界最安水準</div>
+            <div class="price-type">トラック・大型車</div>
+            <div class="price-amount"><span>¥</span>43,000<span style="font-size:1rem;">〜</span></div>
+            <div class="price-tax">（税込）</div>
+            <div class="price-note">
+              <i class="fas fa-info-circle" style="margin-right:8px;"></i>
+              車種・状態により価格が異なる場合があります。<br>まずはお気軽にご相談ください。
+            </div>
+          </div>
+          <div class="pricing-photo">
+            <div class="photo-placeholder" style="height:200px;">
+              <span><i class="fas fa-truck"></i>[写真]<br><small
+                  style="font-size:0.75rem;opacity:0.7;">施工中のイメージ</small></span>
+            </div>
+          </div>
+        </div>
+        <div class="pricing-reasons fade-in-right">
+          <h3>なぜ安くて効果が出るのか？</h3>
+          <ul class="reason-list">
+            <li>
+              <div class="reason-check"><i class="fas fa-check"></i></div>
+              <div class="reason-text">
+                <strong>独自の施工ノウハウ</strong>
+                <span>長年の経験から確立した、最も効果的な施工手順を実践しています。</span>
+              </div>
+            </li>
+            <li>
+              <div class="reason-check"><i class="fas fa-check"></i></div>
+              <div class="reason-text">
+                <strong>機器の使い方まで最適化</strong>
+                <span>HHO機器の設定・使い方を車種ごとに最適化し、効果を最大化します。</span>
+              </div>
+            </li>
+            <li>
+              <div class="reason-check"><i class="fas fa-check"></i></div>
+              <div class="reason-text">
+                <strong>無駄なコストを削減</strong>
+                <span>シンプルな事業構造により、余分なコストを排除。その分をお客様に還元します。</span>
+              </div>
+            </li>
+          </ul>
+          <a href="#contact" class="btn-secondary" style="width:100%;text-align:center;display:block;">
+            <i class="fas fa-envelope" style="margin-right:8px;"></i>無料相談・見積もりを依頼する
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FAQ Section ===== -->
+  <section id="faq" class="section-padding">
+    <div class="container">
+      <h2 class="section-title fade-in">よくある質問</h2>
+      <span class="accent-line fade-in delay-1"></span>
+      <p class="section-subtitle fade-in delay-2" style="margin-top:24px;">お客様からよく寄せられるご質問にお答えします</p>
+      <div class="faq-list">
+        <div class="faq-item fade-in delay-1">
+          <div class="faq-question">
+            <div class="faq-q-icon">Q</div>
+            <div class="faq-q-text">施工時間はどのくらいかかりますか？</div>
+            <div class="faq-toggle"><i class="fas fa-plus"></i></div>
+          </div>
+          <div class="faq-answer">
+            <div class="faq-a-content">
+              <span class="faq-a-icon">A</span>
+              <p>約60分で完了します。通常の点検・整備の合間や休憩時間を利用して施工が可能です。事前にご予約いただければ、スムーズにご対応いたします。</p>
+            </div>
+          </div>
+        </div>
+        <div class="faq-item fade-in delay-2">
+          <div class="faq-question">
+            <div class="faq-q-icon">Q</div>
+            <div class="faq-q-text">効果はいつ頃から実感できますか？</div>
+            <div class="faq-toggle"><i class="fas fa-plus"></i></div>
+          </div>
+          <div class="faq-answer">
+            <div class="faq-a-content">
+              <span class="faq-a-icon">A</span>
+              <p>施工直後〜数日以内に実感いただけるケースが多いです。アイドリングの安定やエンジン音の変化として感じる場合もあります。カーボンの蓄積状況によって個人差があります。</p>
+            </div>
+          </div>
+        </div>
+        <div class="faq-item fade-in delay-3">
+          <div class="faq-question">
+            <div class="faq-q-icon">Q</div>
+            <div class="faq-q-text">エンジンへのダメージはありませんか？</div>
+            <div class="faq-toggle"><i class="fas fa-plus"></i></div>
+          </div>
+          <div class="faq-answer">
+            <div class="faq-a-content">
+              <span class="faq-a-icon">A</span>
+              <p>水素・酸素ガスを使用するため、エンジンへのダメージはありません。化学薬品を使わない安全な施工方法です。エンジンを分解する必要もなく、車両への影響を最小限に抑えられます。</p>
+            </div>
+          </div>
+        </div>
+        <div class="faq-item fade-in delay-4">
+          <div class="faq-question">
+            <div class="faq-q-icon">Q</div>
+            <div class="faq-q-text">どのような車種に対応していますか？</div>
+            <div class="faq-toggle"><i class="fas fa-plus"></i></div>
+          </div>
+          <div class="faq-answer">
+            <div class="faq-a-content">
+              <span class="faq-a-icon">A</span>
+              <p>トラック・大型車を中心に対応しています。小型〜大型まで幅広く対応可能ですが、車種・エンジン形式によって対応状況が異なります。まずはお気軽にご相談ください。</p>
+            </div>
+          </div>
+        </div>
+        <div class="faq-item fade-in delay-5">
+          <div class="faq-question">
+            <div class="faq-q-icon">Q</div>
+            <div class="faq-q-text">関西以外にも対応していますか？</div>
+            <div class="faq-toggle"><i class="fas fa-plus"></i></div>
+          </div>
+          <div class="faq-answer">
+            <div class="faq-a-content">
+              <span class="faq-a-icon">A</span>
+              <p>現在は関西エリア（大阪・兵庫・京都ほか）を中心に対応しています。エリア外の場合もご相談いただければ、対応可能な範囲についてお伝えいたします。</p>
+            </div>
+          </div>
+        </div>
+        <div class="faq-item fade-in delay-6">
+          <div class="faq-question">
+            <div class="faq-q-icon">Q</div>
+            <div class="faq-q-text">定期的な施工は必要ですか？</div>
+            <div class="faq-toggle"><i class="fas fa-plus"></i></div>
+          </div>
+          <div class="faq-answer">
+            <div class="faq-a-content">
+              <span class="faq-a-icon">A</span>
+              <p>カーボンは走行とともに再蓄積するため、定期的な施工をお勧めしています。走行距離や使用環境によって異なりますが、一般的に6ヶ月〜1年に1度の施工が効果的です。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Contact Section ===== -->
+  <section id="contact" class="section-padding">
+    <div class="container">
+      <div class="contact-header fade-in">
+        <h2 class="section-title">まずは無料相談</h2>
+        <span class="accent-line white" style="margin:16px auto 16px;display:block;"></span>
+        <p class="section-subtitle">お気軽にお問い合わせください。関西エリア全域に対応しております。</p>
+      </div>
+      <div class="contact-inner">
+        <div class="contact-info fade-in-left">
+          <h3>お問い合わせ先</h3>
+          <div class="contact-detail">
+            <i class="fas fa-phone"></i>
+            <span>TEL: 000-0000-0000<br><small style="opacity:0.8;font-size:0.82rem;">受付時間：平日 9:00〜18:00</small></span>
+          </div>
+          <div class="contact-detail">
+            <i class="fas fa-envelope"></i>
+            <span>メールフォームよりお問い合わせください</span>
+          </div>
+          <div class="contact-detail">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>関西エリア対応<br>大阪・兵庫・京都・滋賀・奈良・和歌山</span>
+          </div>
+          <div class="contact-detail">
+            <i class="fas fa-clock"></i>
+            <span>施工時間：約60分<br>事前予約制</span>
+          </div>
+        </div>
+        <div class="contact-form-wrap fade-in-right">
+          <div class="contact-form">
+            <form id="contactForm" onsubmit="handleSubmit(event)">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="name">お名前<span class="required">*</span></label>
+                  <input type="text" id="name" class="form-control" placeholder="山田 太郎" required>
+                </div>
+                <div class="form-group">
+                  <label for="company">会社名</label>
+                  <input type="text" id="company" class="form-control" placeholder="〇〇運輸株式会社">
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="tel">電話番号<span class="required">*</span></label>
+                  <input type="tel" id="tel" class="form-control" placeholder="000-0000-0000" required>
+                </div>
+                <div class="form-group">
+                  <label for="email">メールアドレス<span class="required">*</span></label>
+                  <input type="email" id="email" class="form-control" placeholder="example@email.com" required>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="message">お問い合わせ内容</label>
+                <textarea id="message" class="form-control" placeholder="車種、現在のお悩み、ご希望の施工時期などをご記入ください。"></textarea>
+              </div>
+              <div class="form-submit">
+                <button type="submit" class="btn-submit">
+                  <i class="fas fa-paper-plane"></i>
+                  無料相談を申し込む
+                </button>
+              </div>
+            </form>
+            <div class="form-success" id="formSuccess">
+              <i class="fas fa-check-circle" style="color:var(--primary);"></i>
+              <h3 style="color:var(--text-dark);font-size:1.2rem;margin-bottom:12px;">お問い合わせを受け付けました</h3>
+              <p style="color:var(--text-medium);font-size:0.95rem;">担当者より折り返しご連絡いたします。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer id="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <span class="logo-footer">
+            MEISHOU CARBON CLEANING
+            <span>明昇カーボンクリーニング</span>
+          </span>
+          <p>関西エリアのトラック・大型車向けHHOカーボンクリーニング専門。燃費改善・DPF負担軽減・エンジン出力回復を業界最安水準でご提供します。</p>
+          <div class="footer-area">
+            <i class="fas fa-map-marker-alt"></i>
+            大阪・兵庫・京都・滋賀・奈良・和歌山
+          </div>
+        </div>
+        <div class="footer-nav">
+          <h4>サービス</h4>
+          <ul>
+            <li><a href="#solution">サービス内容</a></li>
+            <li><a href="#process">施工の流れ</a></li>
+            <li><a href="#effects">導入効果</a></li>
+            <li><a href="#pricing">料金プラン</a></li>
+          </ul>
+        </div>
+        <div class="footer-nav">
+          <h4>サポート</h4>
+          <ul>
+            <li><a href="#faq">よくある質問</a></li>
+            <li><a href="#contact">お問い合わせ</a></li>
+            <li><a href="#problems">こんなお悩みに</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 MEISHOU CARBON CLEANING. All Rights Reserved.</p>
+        <p>HHOカーボンクリーニング専門｜関西エリア対応</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== JavaScript ===== -->
+  <script>
+    /* ===== Hero Canvas Animation (Gentle Particles) ===== */
+    (function () {
+      const canvas = document.getElementById('heroCanvas');
+      const ctx = canvas.getContext('2d');
+      let particles = [];
+      let animId;
+
+      function resize() {
+        canvas.width = canvas.offsetWidth;
+        canvas.height = canvas.offsetHeight;
+      }
+
+      function createParticles() {
+        particles = [];
+        const count = Math.floor((canvas.width * canvas.height) / 18000);
+        for (let i = 0; i < count; i++) {
+          particles.push({
+            x: Math.random() * canvas.width,
+            y: Math.random() * canvas.height,
+            r: Math.random() * 3 + 1,
+            dx: (Math.random() - 0.5) * 0.4,
+            dy: -Math.random() * 0.5 - 0.2,
+            alpha: Math.random() * 0.35 + 0.1,
+            alphaDir: (Math.random() - 0.5) * 0.005
+          });
+        }
+      }
+
+      function draw() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        particles.forEach(p => {
+          ctx.beginPath();
+          ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+          ctx.fillStyle = `rgba(255,255,255,${p.alpha})`;
+          ctx.fill();
+
+          p.x += p.dx;
+          p.y += p.dy;
+          p.alpha += p.alphaDir;
+
+          if (p.alpha <= 0.05) p.alphaDir = Math.abs(p.alphaDir);
+          if (p.alpha >= 0.45) p.alphaDir = -Math.abs(p.alphaDir);
+
+          if (p.y < -10) { p.y = canvas.height + 10; p.x = Math.random() * canvas.width; }
+          if (p.x < -10) p.x = canvas.width + 10;
+          if (p.x > canvas.width + 10) p.x = -10;
+        });
+        animId = requestAnimationFrame(draw);
+      }
+
+      window.addEventListener('resize', () => {
+        resize();
+        createParticles();
+      });
+
+      resize();
+      createParticles();
+      draw();
+    })();
+
+    /* ===== Sticky Header ===== */
+    const header = document.getElementById('header');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 60) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+    }, { passive: true });
+
+    /* ===== Mobile Nav ===== */
+    const hamburger = document.getElementById('hamburger');
+    const mobileNav = document.getElementById('mobileNav');
+
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('open');
+      mobileNav.classList.toggle('open');
+      document.body.style.overflow = mobileNav.classList.contains('open') ? 'hidden' : '';
+    });
+
+    function closeMobileNav() {
+      hamburger.classList.remove('open');
+      mobileNav.classList.remove('open');
+      document.body.style.overflow = '';
+    }
+
+    /* ===== Scroll Fade-in (IntersectionObserver) ===== */
+    const fadeEls = document.querySelectorAll('.fade-in, .fade-in-left, .fade-in-right');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
+
+    fadeEls.forEach(el => observer.observe(el));
+
+    /* ===== Counter Animation ===== */
+    function animateCount(el) {
+      const target = parseInt(el.dataset.target);
+      const suffix = el.dataset.suffix || '';
+      const duration = 1800;
+      const step = 16;
+      const increment = target / (duration / step);
+      let current = 0;
+      const timer = setInterval(() => {
+        current += increment;
+        if (current >= target) {
+          current = target;
+          clearInterval(timer);
+        }
+        el.textContent = Math.floor(current) + suffix;
+      }, step);
+    }
+
+    const counterEls = document.querySelectorAll('.stat-number[data-target]');
+    const counterObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting && !entry.target.dataset.counted) {
+          entry.target.dataset.counted = '1';
+          animateCount(entry.target);
+        }
+      });
+    }, { threshold: 0.5 });
+
+    counterEls.forEach(el => counterObserver.observe(el));
+
+    /* ===== FAQ Accordion ===== */
+    document.querySelectorAll('.faq-question').forEach(q => {
+      q.addEventListener('click', () => {
+        const item = q.parentElement;
+        const isOpen = item.classList.contains('open');
+        // Close all
+        document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+        // Open clicked if was closed
+        if (!isOpen) item.classList.add('open');
+      });
+    });
+
+    /* ===== Smooth Scroll ===== */
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        const href = a.getAttribute('href');
+        if (href === '#') return;
+        const target = document.querySelector(href);
+        if (target) {
+          e.preventDefault();
+          const headerH = header.offsetHeight;
+          const top = target.getBoundingClientRect().top + window.scrollY - headerH - 16;
+          window.scrollTo({ top, behavior: 'smooth' });
+        }
+      });
+    });
+
+    /* ===== Form Submit ===== */
+    function handleSubmit(e) {
+      e.preventDefault();
+      const form = document.getElementById('contactForm');
+      const success = document.getElementById('formSuccess');
+      form.style.display = 'none';
+      success.style.display = 'block';
+    }
+
+    /* ===== Active Nav on Scroll ===== */
+    const sections = document.querySelectorAll('section[id]');
+    const navLinks = document.querySelectorAll('.nav-links a[href^="#"]');
+    window.addEventListener('scroll', () => {
+      const scrollY = window.scrollY + header.offsetHeight + 60;
+      sections.forEach(sec => {
+        const top = sec.offsetTop;
+        const bottom = top + sec.offsetHeight;
+        if (scrollY >= top && scrollY < bottom) {
+          navLinks.forEach(link => {
+            link.classList.remove('active');
+            if (link.getAttribute('href') === '#' + sec.id) link.classList.add('active');
+          });
+        }
+      });
+    }, { passive: true });
+  </script>
+</body>
+
+</html>
