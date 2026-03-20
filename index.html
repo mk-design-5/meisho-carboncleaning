@@ -1713,6 +1713,15 @@
       .hero-h2 {
         font-size: 1.1rem;
       }
+
+      /* インライン指定の固定高さを上書き（右側見切れ・はみ出しを防止） */
+      #hero .photo-placeholder,
+      #cause .photo-placeholder,
+      #solution .photo-placeholder,
+      #pricing .photo-placeholder {
+        height: auto !important;
+        width: 100% !important;
+      }
     }
 
     @media (max-width: 480px) {
@@ -1758,9 +1767,11 @@
       }
 
       .hero-image .photo-placeholder,
-      .solution-image .photo-placeholder {
+      .solution-image .photo-placeholder,
+      .cause-image .photo-placeholder,
+      .pricing-photo .photo-placeholder {
         aspect-ratio: 16/9;
-        /* スマホでは縦幅を抑える */
+        /* スマホでは縦幅を抑えて横幅はみ出しを防ぐ */
       }
 
       /* ボタンの全幅表示化 */
