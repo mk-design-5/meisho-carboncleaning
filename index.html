@@ -464,6 +464,44 @@
       transform: translateY(-7px) rotate(-45deg);
     }
 
+    /* ===== Header Socials ===== */
+    .header-socials {
+      position: absolute;
+      top: 0px;
+      right: 0;
+      display: flex;
+      gap: 16px;
+      align-items: center;
+      z-index: 10;
+    }
+
+    .header-socials a {
+      color: rgba(255, 255, 255, 0.9);
+      font-size: 1.4rem;
+      transition: var(--transition);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 32px;
+      height: 32px;
+    }
+
+    #header.scrolled .header-socials a {
+      color: var(--text-medium);
+    }
+
+    .header-socials a.social-line:hover,
+    #header.scrolled .header-socials a.social-line:hover {
+      color: #06C755;
+      transform: translateY(-2px);
+    }
+
+    .header-socials a.social-ig:hover,
+    #header.scrolled .header-socials a.social-ig:hover {
+      color: #E1306C;
+      transform: translateY(-2px);
+    }
+
     /* ===== Hero Section ===== */
     #hero {
       min-height: 100vh;
@@ -1648,6 +1686,18 @@
         display: flex;
       }
 
+      .header-socials {
+        top: 8px;
+        right: 48px;
+        gap: 12px;
+      }
+
+      .header-socials a {
+        font-size: 1.25rem;
+        width: 28px;
+        height: 28px;
+      }
+
       .solution-cards {
         grid-template-columns: 1fr;
       }
@@ -1658,6 +1708,68 @@
     }
 
     @media (max-width: 480px) {
+
+      /* 横幅（コンテナ余白）の最適化 */
+      .container {
+        padding: 0 16px;
+      }
+
+      /* 文字の大きさの最適化 */
+      .section-title {
+        font-size: 1.4rem;
+        margin-bottom: 12px;
+      }
+
+      .section-subtitle {
+        font-size: 0.9rem;
+        margin-bottom: 32px;
+      }
+
+      .hero-title {
+        font-size: 1.6rem;
+      }
+
+      .hero-sub {
+        font-size: 0.95rem;
+      }
+
+      .hero-h2 {
+        font-size: 1rem;
+        padding: 12px 16px;
+      }
+
+      .problem-card h3 {
+        font-size: 0.95rem;
+      }
+
+      /* 写真の枠の最適化 */
+      .photo-placeholder,
+      img {
+        border-radius: var(--radius-sm);
+        box-shadow: var(--shadow-sm);
+      }
+
+      .hero-image .photo-placeholder,
+      .solution-image .photo-placeholder {
+        aspect-ratio: 16/9;
+        /* スマホでは縦幅を抑える */
+      }
+
+      /* ボタンの全幅表示化 */
+      .hero-buttons {
+        flex-direction: column;
+        width: 100%;
+        gap: 12px;
+      }
+
+      .btn-primary,
+      .btn-secondary {
+        width: 100%;
+        text-align: center;
+        padding: 14px 24px;
+        box-sizing: border-box;
+      }
+
       .effects-stats {
         grid-template-columns: repeat(2, 1fr);
       }
@@ -1667,7 +1779,9 @@
       }
 
       .problems-grid {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
+        /* スマホ画面では1列にして横幅を確保 */
+        gap: 16px;
       }
     }
   </style>
@@ -1689,6 +1803,16 @@
   <header id="header">
     <div class="container">
       <div class="header-inner">
+        <div class="header-socials">
+          <a href="https://line.me/R/ti/p/@304ckhqi?ts=12101149&oat_content=url" target="_blank"
+            rel="noopener noreferrer" aria-label="LINE" class="social-line">
+            <i class="fab fa-line"></i>
+          </a>
+          <a href="https://www.instagram.com/meishou_carboncleaning/" target="_blank" rel="noopener noreferrer"
+            aria-label="Instagram" class="social-ig">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </div>
         <div class="logo-container">
           <a href="#hero" class="logo-img">
             <div class="logo-image-space">ロゴ写真</div>
